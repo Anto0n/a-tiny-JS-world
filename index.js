@@ -51,8 +51,10 @@ function printObject (object){
     return Object.values(object).map(function(k){return k}).join(";");
 }
 print(printObject(dog), 'div');
-console.log(printObject(dog));
-console.log(printObject(woman));
+print(printObject(cat), 'div');
+print(printObject(man), 'div');
+print(printObject(woman), 'div');
+
 // ======== OUTPUT ========
 /* Use print(message) for output.
    Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
