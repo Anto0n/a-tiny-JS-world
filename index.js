@@ -7,8 +7,52 @@
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
+const dog = {
+    species: 'dog',
+    name: 'Toby',
+    gender: 'male',
+    legs: 4,
+    hands: 0,
+    saying: 'Hello world!'
+};
 
+const cat = {
+    species: 'cat',
+    name: 'Tom',
+    gender: 'male',
+    legs: 4,
+    hands: 0,
+    saying: 'Hello world!'
+};
 
+const woman = {
+    species: 'humans',
+    name: 'Rita',
+    gender: 'female',
+    legs: 2,
+    hands: 2,
+    saying: 'Hello world!'
+}
+
+const man = {
+    species: 'humans',
+    name: 'Anton',
+    gender: 'male',
+    legs: 2,
+    hands: 2,
+    saying: 'Hello world!'
+}
+
+function printObject (object){
+
+    if (object.hands === 0){
+        delete object.hands;
+    }
+    return Object.values(object).map(function(k){return k}).join(";");
+}
+print(printObject(dog), 'div');
+console.log(printObject(dog));
+console.log(printObject(woman));
 // ======== OUTPUT ========
 /* Use print(message) for output.
    Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
